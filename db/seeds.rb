@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require "open-uri"
 
+Cocktail.destroy_all
 
 p "seeding the DB with ingredients"
 
