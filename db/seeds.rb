@@ -7,8 +7,14 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require "open-uri"
 
+Cocktail.all.each do |cocktail|
+  cocktail.photo.purge
+end
+
 Cocktail.destroy_all
 Ingredient.destroy_all
+
+
 
 p "seeding the DB with ingredients"
 
