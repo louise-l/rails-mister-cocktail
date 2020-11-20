@@ -8,6 +8,7 @@
 require "open-uri"
 
 Cocktail.destroy_all
+Ingredient.destroy_all
 
 p "seeding the DB with ingredients"
 
